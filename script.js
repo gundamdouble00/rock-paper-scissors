@@ -52,6 +52,11 @@ function playGame() {
     console.log(result);
   }
   if (humanScore == computerScore) {
+    console.log("You and computer win!!");
+    return;
+  }
+
+  if (humanScore > computerScore) {
     console.log("Final result: You (human) win!");
     return;
   }
